@@ -28,27 +28,27 @@ const ViewScript = () => {
     <div>
       <MainHeader />
       <h1 className=' font-bold text-center text-2xl mb-4'>View Script</h1>
-      <div className=' mb-3 font-bold border-2 border-gray-500 bg-gray-100 rounded w-[260px] md:w-[350px] md:ml-2'>
+      <div className=' mb-3 font-bold border-2 border-gray-500 bg-gray-100 rounded w-[260px] md:w-[350px] ml-2'>
       <h1>Title</h1>
       <h1>{(script?.scriptTitle)? <span> {script?.scriptTitle}</span> : <span>Untitled</span> }</h1>
       </div>
  
- <div className={`${script?.genre && " mb-3 font-bold border-2 bg-gray-100 border-gray-500 rounded w-[260px] md:w-[350px] md:ml-2" }`}>
+ <div className={`${script?.genre && " mb-3 font-bold border-2 bg-gray-100 border-gray-500 rounded w-[260px] md:w-[350px] ml-2" }`}>
   <h1>{script?.genre && <span>Genre</span> }</h1>
   <h1>{script?.genre && <span> {script?.genre}</span> }</h1>
  </div>
 
 
-<div className=' mb-3 border-2 bg-gray-100 border-gray-500 rounded font-semibold md:w-[90%] md:ml-2'>
+<div className=' mb-3 border-2 bg-gray-100 border-gray-500 rounded font-semibold md:w-[90%] ml-2 mr-2'>
  <h1 className=' font-bold text-2xl'>Script</h1>
 <p>{script?.script}</p>
 </div>
-        <div className=' border-2 mb-3 bg-gray-100 border-gray-500 rounded w-[260px] font-bold md:w-[350px] md:ml-2'>
+        <div className=' border-2 mb-3 bg-gray-100 border-gray-500 rounded w-[260px] font-bold md:w-[350px] ml-2'>
           <h1>Word count</h1>
         <p> {script?.wordCount}</p>
         </div>
          
-         <div className=' border-2 mb-3 bg-gray-100 border-gray-500 rounded w-[260px] font-bold md:w-[350px] md:ml-2'>
+         <div className=' border-2 mb-3 bg-gray-100 border-gray-500 rounded w-[260px] font-bold md:w-[350px] ml-2'>
           <h1>Created at</h1>
          <p>{script?.createdAtIst}</p>
          </div>
